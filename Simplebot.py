@@ -11,7 +11,7 @@ def start_bot(update: Updater, CallbackContext):
 	mytext = """Привет, {}!
 Я пока не очень умный бот и знаю только команду /start. Можешь нажать еще раз :)""".format(update.message.chat.first_name)
 	update.message.reply_text(mytext)
-	print("Hello")
+	print("{} взаимодействует с ботом".format(update.message.chat.first_name))
 
 def chat(update: Updater, CallbackContext):
 	text = "Создатель еще не научил меня понимать слова. Я понимаю только команды, и то пока что одну: /start"
